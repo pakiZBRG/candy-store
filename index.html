@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Bootstrap CSS -->
+      <link rel='stylesheet' href='css/bootstrap.min.css'>
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <!-- CSS -->
+      <link rel='stylesheet' href='main.css'>
+      <!-- Font Awsome -->
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Merienda|Prompt&display=swap" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+      <title>Grandma's Sweet World</title>
+   </head>
+
+   <body>
+      <header id="header">
+         <nav class="navbar navbar-expand-lg px-4">
+            <a href="#" class='navbar-brand'>
+               <img src="slike/slika.png" alt="main icon" height='80px'>
+            </a>
+            <button class='navbar-toggler' data-toggle='collapse' data-target='#myNavbar'>
+               <span class='toggler-icon'>
+                  <i class='fa fa-bars'></i>
+               </span>
+            </button>
+            <div class="collapse navbar-collapse" id='myNavbar'>
+               <ul class="navbar-nav mx-auto mx-auto text-center">
+                  <li class="nav-item active">
+                     <a href="#header" class='nav-link'>Home</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="#about" class='nav-link'>About</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="#store" class='nav-link'>Store</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="#services" class='nav-link'>Services</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="#cakes" class='nav-link'>Cakes</a>
+                  </li>
+               </ul>
+               <div class="nav-info-items d-none d-lg-flex">
+                  <!-- Single Info -->
+                  <div class="nav-info align-items-center d-flex justify-content-between mx-lg-4">
+                     <span class='info-icon mx-lg-3'>
+                        <i class="fa fa-phone fa-lg fon"></i>
+                     </span>
+                     <p class='mb-0'>+381 67 8968902</p>
+                  </div>
+                  <!-- Single Info -->
+                  <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-3">
+                     <span class="cart-info-icon mr-lg-3">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                     </span>
+                     <p class="mb-0">
+                        <span id="item-count">2</span>
+                        items - &euro;
+                        <span class="item-total">10.49</span>
+                     </p>                     
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <!-- Banner -->
+         <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+               <div class="col-10 mx-auto banner text-center">
+                  <h1 style='color: #fff; font-size: 4.5rem;'>Welcome to <br><STRONG class='banner-title'>Grandma's Sweet World</STRONG></h1>
+                  <a href="#store" class='btn banner-link text-uppercase my-2'>explore</a>
+               </div>
+               <!-- CART -->
+               <div class="cart" id="cart">
+                  <!-- CART ITEM -->
+                  <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                     <img src='slike/slika3.jpeg' class='img-fluid cart-img' id='item-img' alt=''/>
+                     <div class="item-text">
+                        <p id='cart-item-title' class='font-weight-bold mb-0'>
+                           cart item
+                        </p>
+                        <span>$</span>
+                        <span id='cart-item-price' class='cart-item-price mb-0'>10.99</span>
+                     </div>
+                     <a href="#" id='cart-item-remove' class='cart-item-remove'>
+                        <i class='fa fa-trash'></i>
+                     </a>
+                  </div>
+                  <!-- END OF CART ITEM -->
+                  <!-- CART ITEM -->
+                  <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                     <img src='slike/slika4.jpeg' class='img-fluid cart-img' id='item-img' alt=''/>
+                     <div class="item-text">
+                        <p id='cart-item-title' class='font-weight-bold mb-0'>
+                           cart item
+                        </p>
+                        <span>$</span>
+                        <span id='cart-item-price' class='cart-item-price mb-0'>10.99</span>
+                     </div>
+                     <a href="#" id='cart-item-remove' class='cart-item-remove'>
+                        <i class='fa fa-trash'></i>
+                     </a>
+                  </div>
+                  <!-- END OF CART ITEM -->
+                  <!-- TOTAL -->
+                  <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                     <h5>total</h5>
+                     <h5>$ <strong id='cart-total' class='font-weight-bold'>10.99</strong></h5>
+                  </div>
+                  <!-- END OF TOTAL -->
+                  <!-- CART BTN -->
+                  <div class='cart-buttons-container mt-3 d-flex justify-content-between'>
+                     <a href='#' id='clear-cart' class='btn btn-black text-uppercase'>clear</a>
+                     <a href='#' id='clear-cart' class='btn btn-pink text-uppercase'>checkout</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- About Us -->
+      <section class="about py-5" id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-10 mx-auto col-md-6 my-4">
+                  <h1>About <strong class='banner-title'>Us</strong></h1>
+                  <p class="text-muted my-4 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati id cupiditate atque aliquam veritatis natus illum exercitationem error fugiat, ratione assumenda tempore, optio delectus blanditiis mollitia reiciendis dignissimos. Reiciendis, iste!</p>
+                  <a href="#" class='btn btn-outline-dark text-uppercase'>explore</a>
+               </div>
+               <div class="col-10 mx-auto col-md-6 my-5 align-selft-center">
+                  <div class="about-img">
+                     <img src="slike/slika1.jpeg" alt="cookies" class='img-fluid'>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Store -->
+      <section id="store" class="store py-5">
+         <div class="container">
+            <!-- section title -->
+            <div class="row">
+               <div class="col-10 mx-auto col-sm-6 text-center">
+                  <h1>Our <strong class='banner-title'>Store</strong></h1>
+               </div>
+            </div>
+            <!-- filter buttons -->
+            <div class="row">
+               <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap my-5">
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="all">all</button>
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="cakes">cakes</button>
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="doughnuts">doughnuts</button>
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="cupcakes">cupcakes</button>
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="sweets">sweets</button>
+                  <button class='btn btn-black text-uppercase filter-btn m-2' data-filter="chocolate">chocolate</button>
+               </div>
+            </div>
+            <!-- Store items -->
+            <div class="row store-items" id="store-items">
+               <!-- JS coded -->
+            </div>
+         </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services py-5">
+         <div class="container">
+            <div class="row">
+               <!-- Single Service -->
+               <div class="col-lg-4 text-center my-3">
+                  <img src="slike/aaa.png" alt="cake">
+                  <h4 class="text-uppercase my-3 service-title">cake</h4>
+                  <p class="mx-4 text-center service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex aliquam libero provident optio ducimus fugit non laborum magnam, laudantium officia assumenda maiores laboriosam quis?</p>
+               </div>
+               <!-- Single Service -->
+               <div class="col-lg-4 text-center my-3">
+                  <img src="slike/aa.png" alt="cake">
+                  <h4 class="text-uppercase my-3 service-title">cupcake</h4>
+                  <p class="mx-4 text-center service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex aliquam libero provident optio ducimus fugit non laborum magnam, laudantium officia assumenda maiores laboriosam quis?</p>
+               </div>
+               <!-- Single Service -->
+               <div class="col-lg-4 text-center my-3">
+                  <img src="slike/a.png" alt="cake" height='150px'>
+                  <h4 class="text-uppercase my-3 service-title">doughnut</h4>
+                  <p class="mx-4 text-center service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex aliquam libero provident optio ducimus fugit non laborum magnam, laudantium officia assumenda maiores laboriosam quis?</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Cakes -->
+      <section id="cakes" class="cakes py-5">
+         <div class="container">
+            <!-- section title -->
+            <div class="row">
+               <div class="col-10 mx-auto col-sm-6 mb-5 text-center">
+                  <h1>Order <strong class='banner-title'>Cakes</strong></h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-11 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                  <h3 class="py-3 font-weight-bold">Birthday Cake</h3>
+                  <div class="text-muted">
+                     <p class="my-3">birthday cake with a name</p>
+                     <p class="my-3">you choose ingridients</p>
+                     <p class="my-3">you choose size</p>
+                     <p class="my-3">you choose design</p>
+                     <button class='btn btn-pink mb-3'>Order Now</button>
+                     <p class="mb-4">Starting At &euro;5.99</p>
+                     <img src="slike/birthday.png" alt="birthday cake" class='mb-lg-5 slika'>
+                  </div>
+               </div>
+               <div class="col-11 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                  <h3 class="py-3 font-weight-bold">Custom Cake</h3>
+                  <div class="text-muted">
+                     <p class="my-3">birthday cake with a name</p>
+                     <p class="my-3">you choose ingridients</p>
+                     <p class="my-3">you choose size</p>
+                     <p class="my-3">you choose design</p>
+                     <button class='btn btn-pink mb-3'>Order Now</button>
+                     <p class="mb-4">Starting At &euro;8.99</p>
+                     <img src="slike/ordinary.png" alt="birthday cake" class='mb-lg-5 slika'>
+                  </div>
+               </div>
+               <div class="col-11 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
+                  <h3 class="py-3 font-weight-bold">Wedding Cake</h3>
+                  <div class="text-muted">
+                     <p class="my-3">birthday cake with a name</p>
+                     <p class="my-3">you choose ingridients</p>
+                     <p class="my-3">you choose size</p>
+                     <p class="my-3">you choose design</p>
+                     <button class='btn btn-pink mb-3'>Order Now</button>
+                     <p class="mb-4">Starting At &euro;18.99</p>
+                     <img src="slike/wedding.png" alt="birthday cake" class='mb-lg-5 slika'>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6 footer-title py-4">
+                  <h1 class="text-capitalize text-center mt-3">
+                     <strong class="banner-title">grandma's sweet world</strong>
+                  </h1>
+                  <div class='footer-icons d-flex mt-5 justify-content-around flex-wrap'>
+                     <a href="#" class='footer-icon'><i class="fa fa-facebook fa-lg"></i></a>
+                     <a href="#" class='footer-icon'><i class="fa fa-instagram fa-lg"></i></a>
+                     <a href="#" class='footer-icon'><i class="fa fa-twitter fa-lg"></i></a>
+                     <a href="#" class='footer-icon'><i class="fa fa-pinterest fa-lg"></i></a>
+                  </div>
+               </div>
+               <div class="col-lg-6 footer-contact text-center p-5">
+                  <h2 class="mb-5 font-weight-bold">Contact</h2>
+                  <p class="d-flex flex-wrap">
+                     <span class="mr-4 footer-icon-2">
+                        <i class="fa fa-map"></i>
+                     </span>
+                     <span style='margin-top: 6px'>Ulica Dzordza Vasingtona 16, Beograd</span>
+                  </p>
+                  <p class="d-flex flex-wrap">
+                     <span class="mr-4 footer-icon-2">
+                        <i class="fa fa-envelope"></i>
+                     </span>
+                     <span style='margin-top: 6px'>pavlovicnikola511@gmail.com</span>
+                  </p>
+                  <p class="d-flex flex-wrap">
+                     <span class="mr-4 footer-icon-2">
+                        <i class="fa fa-phone"></i>
+                     </span>
+                     <span style='margin-top: 6px'>+381 67 8968902</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Boostrap JS Bundle -->
+      <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+      <!-- JS -->
+      <script src='script.js'></script>
+   </body>
+</html>
